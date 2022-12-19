@@ -78,25 +78,26 @@ const AddMusic = () => {
   }
 
   return (
-    <div className="container">
-      <h3 className="my-3 text-center">Register User</h3>
+    <div id="bg-image">
+    <div id="head"className="container">
+      <h3 id="tx" className="my-3 text-center">Add Music</h3>
 
       <Formik initialValues={{ title: "", genre: "", artist: "", lyrics: "", publisher: "", createdAt: new Date() }} onSubmit={userSubmit}>
         {({ values, handleChange, handleSubmit }) => (
           <form onSubmit={handleSubmit}>
-            <label>Title</label>
+            <label id="tx">Title</label>
             <input value={values.title} id="title" onChange={handleChange} className="form-control mb-3" />
 
-            <label>Genre</label>
+            <label id="tx">Genre</label>
             <input value={values.genre} id="genre" onChange={handleChange} className="form-control mb-3 " />
 
-            <label>Artist</label>
+            <label id="tx">Artist</label>
             <input value={values.artist} id="artist" onChange={handleChange} className="form-control mb-3" />
 
-            <label>Publisher</label>
+            <label id="tx">Publisher</label>
             <input value={values.publisher} id="publisher" onChange={handleChange} className="form-control mb-3" />
 
-            <label>Publisher</label>
+            <label id="tx">Lyrics</label>
             <textarea rows={5} value={values.lyrics} id="lyrics" onChange={handleChange} className="form-control mb-3"></textarea>
 
             <label htmlFor="uploadfile" className="mt-4 btn btn-dark">Choose File</label>
@@ -110,6 +111,10 @@ const AddMusic = () => {
           </form>
         )}
       </Formik>
+    </div>
+    <p>
+      
+    </p>
     </div>
   )
 }
