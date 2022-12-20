@@ -21,9 +21,9 @@ const Track = () => {
         <div className="card">
             <img className="card-img-top" src={"http://localhost:5000/" + music.image} alt="" />
           <div className="card-body">
-            <h4>{music.title}</h4>
-            <p className="text-muted">{music.artist}</p>
-            <p className="float-end text-muted">{music.publisher} | {music.year}</p>
+            <h4 id="details">{music.title}</h4>
+            <p id="details" className="text-muted">{music.artist}</p>
+            <p id="details" className="float-end text-muted">{music.publisher} | {music.year}</p>
             <Link className="btn btn-warning w-100" to={'/playmusic/'+music._id}>Play Now</Link>
           </div>
         </div>

@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: linear-gradient(blue,pink);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+}
 .App {
   text-align: center;
 }
@@ -43,9 +54,10 @@
 }
 #bg-image{
   background-image: url("bg-image.jpg");
+  min-height: 100vh;
   background-position: center;
   background-size: cover;
-  height: 100%;
+  padding-top: 2rem ;
   width: 100%;
   
 
@@ -54,6 +66,15 @@
 #tx{
   color: white;
 }
-html,body{
-  height: 100%;
+
+#details{
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+.login-container{
+  padding-top: 8rem;
+  
+ 
+  
 }

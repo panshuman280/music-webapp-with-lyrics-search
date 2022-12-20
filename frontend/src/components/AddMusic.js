@@ -34,7 +34,7 @@ const AddMusic = () => {
       Swal.fire({
         icon: "success",
         title: "Well Done",
-        text: "Registered Successfully",
+        text: "Added Successfully",
       })
 
     } else {

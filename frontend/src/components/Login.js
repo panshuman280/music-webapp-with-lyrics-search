@@ -39,7 +39,7 @@ const Login = () => {
   }
 
   return (
-    <div>
+    <div className="login-container">
       <div className="col-md-3 mx-auto pt-5">
         <div className="card">
           <div className="card-body">
@@ -48,8 +48,8 @@ const Login = () => {
             <Formik initialValues={{ email: "", password: "" }} onSubmit={userSubmit}>
               {({ values, handleSubmit, handleChange }) => (
                 <form onSubmit={handleSubmit}>
-                  <label></label>
-                  <input className="form-control mb-3" value={values.email} onChange={handleChange} name="email" />
+                  <label>Email</label>
+                  <input className="form-control mb-3" type="email" value={values.email} onChange={handleChange} name="email" />
 
                   <label>Password</label>
                   <input className="form-control mb-3" type="password" value={values.password} onChange={handleChange} name="password" />
