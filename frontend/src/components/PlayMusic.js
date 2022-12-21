@@ -26,7 +26,7 @@ const PlayMusic = () => {
       return (
         <div id="playmusic" className="col-md-3 mt-4">
           <div className="card">
-            <img className="card-img-top" src={"http://localhost:5000/" + musicData.image} alt="" />
+            <img id="img" className="card-img-top" src={"http://localhost:5000/" + musicData.image} alt="" />
             <div className="card-body">
               <h1>{musicData.title}</h1>
             </div>
@@ -50,7 +50,7 @@ const PlayMusic = () => {
   return (
     <div>
       <header>
-        <h1>Music Player</h1>
+        <h1 className="text-white text-center">Music Player</h1>
       </header>
       {displayMusic()}
     </div>

@@ -22,7 +22,7 @@ const Track = () => {
     const data = await response.json()
     setMusicList(
         data.filter(song => (
-          song.lyrics.toLowerCase().includes(lyrText.toLowerCase())
+          song.title.toLowerCase().includes(lyrText.toLowerCase())
         ))
     )
     setSearched(true);
@@ -33,23 +33,19 @@ const Track = () => {
     return musicList.map((music) => (
       <div className="col-md-3 mt-4">
         <div className="card">
-<<<<<<< HEAD
-            <img id="img"className="card-img-top" src={"http://localhost:5000/" + music.image} alt="" />
-=======
-          <img className="card-img-top" src={"http://localhost:5000/" + music.image} alt="" />
->>>>>>> 64bf1f0b29188a92e92409c460cac38e2ab2daa9
-          <div className="card-body">
-            <h4 id="details">{music.title}</h4>
-            <p id="details" className="text-muted">
-              {music.artist}
-            </p>
-            <p id="details" className="float-end text-muted">
-              {music.publisher} | {music.year}
-            </p>
-            <Link className="btn btn-warning w-100" to={"/playmusic/" + music._id}>
-              Play Now
-            </Link>
-          </div>
+
+        <><img id="img" className="card-img-top" src={"http://localhost:5000/" + music.image} alt="" /><div className="card-body">
+        <h4 id="details">{music.title}</h4>
+        <p id="details" className="text-muted">
+          {music.artist}
+        </p>
+        <p id="details" className="float-end text-muted">
+          {music.publisher} 
+        </p>
+        <Link className="btn btn-warning w-100" to={"/playmusic/" + music._id}>
+          Play Now
+        </Link>
+      </div></>
         </div>
       </div>
     ))
@@ -60,7 +56,7 @@ const Track = () => {
       <header className="bg-dark bg-gradient">
         <div className="container text-center">
           <p className="display-1 fw-bold text-white">Music WebApp</p>
-          <p className="h4 mt-4 text-white">Search Lyrics Here 👇</p>
+          <p className="h4 mt-4 text-white">Search songs Here 👇</p>
           <div className="input-group my-3">
             <input className="form-control" onChange={(e) => setLyrText(e.target.value)} />
             <button className="btn btn-primary" onClick={searchLyrics}>
@@ -69,10 +65,6 @@ const Track = () => {
           </div>
         </div>
       </header>
-      <div className="search">
-        <input type="text" placeholder="Search..."></input>
-      </div>
-
       <div className="container mt-5">
         <p className="text-white my-4 display-4">{
           musicList.length ?
