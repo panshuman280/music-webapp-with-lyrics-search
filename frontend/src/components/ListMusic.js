@@ -19,7 +19,7 @@ const Track = () => {
     return musicList.map((music) => (
       <div className="col-md-3 mt-4">
         <div className="card">
-            <img className="card-img-top" src={"http://localhost:5000/" + music.image} alt="" />
+            <img id="img"className="card-img-top" src={"http://localhost:5000/" + music.image} alt="" />
           <div className="card-body">
             <h4 id="details">{music.title}</h4>
             <p id="details" className="text-muted">{music.artist}</p>
@@ -33,11 +33,14 @@ const Track = () => {
 
   return (
     <div>
-      <header className="bg-dark">
-        <div className="container text-center py-5">
+      <header className="bg-dark bg-gradient">
+        <div className="container text-center">
           <p className="display-1 fw-bold text-white">Music WebApp</p>
         </div>
       </header>
+      <div className="search">
+        <input type="text" placeholder="Search..."></input>
+      </div>
 
       <div className="container mt-5">
         <div className="row">{displayData()}</div>

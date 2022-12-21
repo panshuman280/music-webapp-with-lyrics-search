@@ -22,7 +22,7 @@ const Login = () => {
         title: "WellDone!!",
         text: "Loggedin Successfully!!",
       })
-      navigate('/track');
+      navigate('/listmusic');
     } else if (res.status === 401) {
       Swal.fire({
         icon: "error",

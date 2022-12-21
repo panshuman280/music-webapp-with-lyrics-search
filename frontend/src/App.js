@@ -1,8 +1,8 @@
-import logo from "./logo.svg"
+
 import "./App.css"
 import Home from "./components/Home"
 import Login from "./components/Login"
-import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import Header from "./components/Header"
 import AddMusic from "./components/AddMusic"
 import ListMusic from "./components/ListMusic"

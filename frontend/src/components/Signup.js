@@ -52,25 +52,25 @@ const Signup = () => {
     }
   return (
     <div className ='container'>
-      <h3 className='my-3 text-center'>Register User</h3>
+      <h3 className='my-3 text-center text-white'>Register User</h3>
 
       <Formik initialValues={{ name:'',email : '',password :'', age : 0}}
       onSubmit={userSubmit}>
         {({values, handleChange, handleSubmit})  => (
           <form onSubmit={handleSubmit}>
-    
-          <label>Name</label>
+            <div className='w-40'>
+          <label id='label'>Name</label>
           <input value={values.name} id="name" onChange={handleChange} className='form-control mb-3' />
           
-          <label>Email</label>
+          <label id='label'>Email</label>
           <input value={values.email} id="email" onChange={handleChange} className= 'form-control mb-3 ' />
       
-          <label>Password</label>
+          <label id='label'>Password</label>
           <input value={values.password} id="password" onChange={handleChange} type = "password" className='form-control mb-3' />
       
-          <label>Age</label>
+          <label id='label'>Age</label>
           <input value={values.age} id="age" onChange={handleChange} type="number" className='form-control mb-3' />
-          
+          </div>
           <button type='submit' className='btn btn-primary mt-5'>Submit</button>
       
           </form>

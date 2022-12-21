@@ -13,7 +13,7 @@ const Header = () => {
           {/* Container wrapper */}
           <div className="container-fluid">
             {/* Navbar brand */}
-            <a className="navbar-brand" href="/header">
+            <a className="navbar-brand" href="/home">
               <BsFillFileEarmarkMusicFill/>
             </a>
             {/* Toggle button */}

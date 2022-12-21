@@ -24,7 +24,7 @@ const PlayMusic = () => {
   const displayMusic = () => {
     if (!loading && musicData)
       return (
-        <div className="container">
+        <div id="playmusic" className="col-md-3 mt-4">
           <div className="card">
             <img className="card-img-top" src={"http://localhost:5000/" + musicData.image} alt="" />
             <div className="card-body">

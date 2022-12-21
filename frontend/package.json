@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage":"https://github.com/panshuman280/music-webapp-with-lyrics-search"
+  "homepage":"https://github.com/panshuman280/music-webapp-with-lyrics-search",
   "private": true,
   "dependencies": {
 

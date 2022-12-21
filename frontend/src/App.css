@@ -82,3 +82,26 @@ body{
   margin-left: 3rem;
   margin-bottom: 2rem;
 }
+#playmusic{
+  margin-left: 37%;
+}
+#img{
+  height: 300px;
+}
+#label{
+  color: white;
+}
+#regis{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#himg{
+  height: 300px;
+}
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}

@@ -68,4 +68,17 @@ router.put('/update/:id', (req, res) => {
     });
 })
 
+router.post('/authenticate',(req,res)=>{
+    const formdata=req.body;
+    Model.findOne(formdata)
+    .then((result) => {
+        if(result) res.json(result);
+        else res.status(401).json({status:'error'});
+    })
+    .catch((err) => {
+        res.status(500).json(err);
+    });
+
+});
+
 module.exports = router;
