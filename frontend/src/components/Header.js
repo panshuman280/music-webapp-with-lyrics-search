@@ -1,6 +1,9 @@
 import React from "react"
 import { NavLink } from "react-router-dom"
 
+import { BsFillFileEarmarkMusicFill } from "react-icons/bs";
+
+
 const Header = () => {
   return (
     <div>
@@ -10,8 +13,8 @@ const Header = () => {
           {/* Container wrapper */}
           <div className="container-fluid">
             {/* Navbar brand */}
-            <a className="navbar-brand" href="#">
-              Brand
+            <a className="navbar-brand" href="/header">
+              <BsFillFileEarmarkMusicFill/>
             </a>
             {/* Toggle button */}
             <button
@@ -52,19 +55,6 @@ const Header = () => {
                   <NavLink className="nav-link" to="/listmusic">
                     List Music
                   </NavLink>
-                </li>
-              </ul>
-              {/* Icons */}
-              <ul className="navbar-nav d-flex flex-row me-1">
-                <li className="nav-item me-3 me-lg-0">
-                  <a className="nav-link" href="#">
-                    <i className="fas fa-shopping-cart" />
-                  </a>
-                </li>
-                <li className="nav-item me-3 me-lg-0">
-                  <a className="nav-link" href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
                 </li>
               </ul>
             </div>

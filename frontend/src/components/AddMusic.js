@@ -100,12 +100,12 @@ const AddMusic = () => {
             <label id="tx">Lyrics</label>
             <textarea rows={5} value={values.lyrics} id="lyrics" onChange={handleChange} className="form-control mb-3"></textarea>
 
-            <label htmlFor="uploadfile" className="mt-4 btn btn-dark">Choose File</label>
+            <label id="add" htmlFor="uploadfile" className="mt-4 btn btn-dark">Choose File</label>
             <input hidden id="uploadfile" type="file" onChange={uploadFile} />
-            <label htmlFor="uploadimage" className="mt-4 btn btn-dark">Choose Image</label>
+            <label id="add" htmlFor="uploadimage" className="mt-4 btn btn-dark">Choose Image</label>
             <input hidden id="uploadimage" type="file" onChange={uploadImage} />
 
-            <button type="submit" className="btn btn-primary mt-5">
+            <button id="add" type="submit" className="btn btn-primary mt-5">
               Submit
             </button>
           </form>
