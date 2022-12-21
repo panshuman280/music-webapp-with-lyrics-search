@@ -1,13 +1,13 @@
 {
   "name": "frontend",
   "version": "0.1.0",
+<<<<<<< HEAD
   "homepage":"https://github.com/panshuman280/music-webapp-with-lyrics-search",
+=======
+  "homepage": "https://github.com/panshuman280/music-webapp-with-lyrics-search",
+>>>>>>> 64bf1f0b29188a92e92409c460cac38e2ab2daa9
   "private": true,
   "dependencies": {
-
-
-
-
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
